@@ -71,8 +71,13 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  
+ 
+}
 
-  animation: slide-back 0.4s ;
+
+.dark #switch button {
+  animation: slide-back 0.4s; 
 }
 
 .light #switch button {
@@ -120,6 +125,7 @@ ul li a {
 
   transition: background 0.4s;
 }
+
 
 /*pseudo-selector */
 ul li a:hover {
