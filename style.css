@@ -45,7 +45,7 @@ body * {
   padding: 24px;
 }
 #profile img {
-  width: 112px;
+  width: 150px;
 }
 
 #profile p {
@@ -71,13 +71,10 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  
- 
 }
 
-
 .dark #switch button {
-  animation: slide-back 0.4s; 
+  animation: slide-back 0.4s;
 }
 
 .light #switch button {
@@ -111,7 +108,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 24px;
+  padding: 14px 24px;
 
   background-color: var(--surface-color);
   border: 1px solid var(--stroke-color);
@@ -126,9 +123,53 @@ ul li a {
   transition: background 0.4s;
 }
 
-
 /*pseudo-selector */
 ul li a:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+.links-data #sub_data {
+  text-align: center;
+  padding: 20px;
+}
+
+.links-data #profile_data {
+  font-size: 150%;
+}
+
+#curriculum_base {
+  
+  margin: 10px -150px;
+  border-bottom: 3px double var(--text-color) ;
+  
+  padding-bottom: 20px;
+}
+#content_data {
+    margin: 20px -150px;
+    line-height:1.8;
+}
+
+#button_back a {
+  display: flex;
+  justify-content: center;
+
+  padding: 14px 24px;
+  margin: 40px 200px;
+
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.4s;
+}
+#button_back a:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
