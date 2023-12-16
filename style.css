@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.1);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --subtitle-color: rgba(224, 224, 224, 0.801);
 }
 .light {
   --text-color: black;
@@ -21,6 +22,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --subtitle-color: rgba(0, 0, 0, 0.788);
 }
 
 body {
@@ -138,16 +140,48 @@ ul li a:hover {
   font-size: 150%;
 }
 
-#curriculum_base {
+#title {
   
-  margin: 10px -150px;
-  border-bottom: 3px double var(--text-color) ;
+  margin: 20px;
+
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px 30px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+#subtitle{
+  font-size: large;
+
+  margin-top: 50px;
   
-  padding-bottom: 20px;
+  align-items: center;
+}
+
+#subtitle2{
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+#subtitle3{
+  font-size: large;
+  font-style: italic;
+  margin-bottom: 15px ;
+  color: var(--subtitle-color);
+  font-weight: 300;
+
 }
 #content_data {
-    margin: 20px -150px;
-    line-height:1.8;
+  margin: 20px -150px;
+  line-height:1.8;
+}
+
+#content_list{
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 #button_back a {
@@ -155,7 +189,7 @@ ul li a:hover {
   justify-content: center;
 
   padding: 14px 24px;
-  margin: 40px 200px;
+  margin: 40px 20px;
 
   background-color: var(--surface-color);
   border: 1px solid var(--stroke-color);
@@ -199,12 +233,22 @@ footer {
 }
 
 @media (min-width: 700px) {
+  
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@media (max-width: 858px){
+  #title{
+    margin: auto
+  }
+  #content_data{
+    margin: auto
   }
 }
 
