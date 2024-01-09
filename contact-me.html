@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap"
+      rel="stylesheet"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,60 +14,39 @@
   </head>
   <body>
     <div id="container">
-
       <div id="imgsystem">
-        <img class="img1" src="./assets/system.svg">
+        <img class="img1" src="./assets/system.svg" />
       </div>
 
       <div id="profile">
         <img src="./assets/avatar.png" alt="Foto de Alexandre Patta" />
         <p>@alexandrepatta</p>
       </div>
-      
+
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
 
       <div id="title">
-        <a>
-          Email me
-        </a>
+        <a> Contact me </a>
       </div>
 
-      <div>
-      <div class="form-group">
-        <a for="name">Name</a>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder=" Enter name"
-        />
+      <div class="links-data">
+        <div id="sub_data">
+          <p id="profile_data">alexandrelpf@hotmail.com</p>
+          <p>Personal email</p>
+        </div>
+        <div id="sub_data">
+          <p id="profile_data">+55 (35) 99137-5534</p>
+          <p>Phone number</p>
+        </div>
       </div>
-      <div class="form-group">
-        <a for="email">Email</a>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder=" Enter email"
-        />
-      </div>
-      <div class="form-group">
-        <p for="message">Message</p>
-        <input class="form-control" id="message"></input>
-      </div>
-      <button class="btn-primary" onclick="sendMail()">Submit</button>
-      </div>
-      
 
       <div id="button_back">
-        <a href="/index.html" >
-        Back
-        </a>
-      </div>   
-      
+        <a href="/index.html"> Back </a>
+      </div>
+
       <div id="social-links">
         <a href="https://github.com/alexandrepatta" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
@@ -98,13 +79,14 @@
 
     <script src="./script.js"></script>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function(){
-          emailjs.init("J88IzRDe8gWkHZ7hz");
-      })();
+      ;(function () {
+        emailjs.init("J88IzRDe8gWkHZ7hz")
+      })()
     </script>
   </body>
 </html>
